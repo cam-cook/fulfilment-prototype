@@ -1,0 +1,44 @@
+{
+  "cook": {
+    "id": 678,
+    "name": "Fed by Jed",
+    "timezone": "Australia/Melbourne",
+    "ordersPerWeek": 222.5,
+    "riskTags": ["single-drop-long-open"],
+    "why": "Menus stay open for about 4 weeks but each delivers once. All 25 recent menus follow this pattern."
+  },
+  "suggestedStart": { "type": "after_close" },
+  "zones": [
+    { "id": 2797, "name": "Monday Zone 1 (Colin)" },
+    { "id": 2799, "name": "Monday Zone 2 (Mickey)" },
+    { "id": 2801, "name": "Monday Zone 3 (Jordi)" },
+    { "id": 2802, "name": "Monday Zone 4 (Ella)" },
+    { "id": 2798, "name": "Tuesday Zone 1 (Colin)" },
+    { "id": 2800, "name": "Tuesday Zone 2 (Mickey)" }
+  ],
+  "pickupLocations": [],
+  "schedules": [
+    { "id": "s-2797", "type": "delivery", "zoneId": 2797, "days": ["monday"],  "timeWindows": [{ "start": "05:00", "end": "15:30" }], "deadline": { "strategy": "days_before_at_time", "daysBefore": 7, "time": "23:55" }, "maxOrders": null },
+    { "id": "s-2799", "type": "delivery", "zoneId": 2799, "days": ["monday"],  "timeWindows": [{ "start": "07:00", "end": "14:30" }], "deadline": { "strategy": "days_before_at_time", "daysBefore": 7, "time": "23:55" }, "maxOrders": null },
+    { "id": "s-2801", "type": "delivery", "zoneId": 2801, "days": ["monday"],  "timeWindows": [{ "start": "07:00", "end": "15:30" }], "deadline": { "strategy": "days_before_at_time", "daysBefore": 7, "time": "23:55" }, "maxOrders": null },
+    { "id": "s-2802", "type": "delivery", "zoneId": 2802, "days": ["monday"],  "timeWindows": [{ "start": "07:00", "end": "15:30" }], "deadline": { "strategy": "days_before_at_time", "daysBefore": 7, "time": "23:55" }, "maxOrders": null },
+    { "id": "s-2798", "type": "delivery", "zoneId": 2798, "days": ["tuesday"], "timeWindows": [{ "start": "05:00", "end": "15:30" }], "deadline": { "strategy": "days_before_at_time", "daysBefore": 8, "time": "23:55" }, "maxOrders": null },
+    { "id": "s-2800", "type": "delivery", "zoneId": 2800, "days": ["tuesday"], "timeWindows": [{ "start": "07:00", "end": "15:30" }], "deadline": { "strategy": "days_before_at_time", "daysBefore": 8, "time": "23:55" }, "maxOrders": null }
+  ],
+  "referenceMenu": {
+    "id": 26152,
+    "name": "Green Menu delivered November 16-17",
+    "opensAt": "2026-10-14T08:00:00+11:00",
+    "closesAt": "2026-11-09T23:55:00+11:00",
+    "zoneIds": [2797, 2799, 2801, 2802, 2798, 2800],
+    "pickupLocationIds": [],
+    "legacyWindows": [
+      { "type": "delivery", "zoneId": 2797, "from": "2026-11-16T05:00:00+11:00", "to": "2026-11-16T15:30:00+11:00", "cutoff": "2026-11-09T23:55:00+11:00", "maxOrders": null, "private": false },
+      { "type": "delivery", "zoneId": 2799, "from": "2026-11-16T07:00:00+11:00", "to": "2026-11-16T14:30:00+11:00", "cutoff": "2026-11-09T23:55:00+11:00", "maxOrders": null, "private": false },
+      { "type": "delivery", "zoneId": 2801, "from": "2026-11-16T07:00:00+11:00", "to": "2026-11-16T15:30:00+11:00", "cutoff": "2026-11-09T23:55:00+11:00", "maxOrders": null, "private": false },
+      { "type": "delivery", "zoneId": 2802, "from": "2026-11-16T07:00:00+11:00", "to": "2026-11-16T15:30:00+11:00", "cutoff": "2026-11-09T23:55:00+11:00", "maxOrders": null, "private": false },
+      { "type": "delivery", "zoneId": 2798, "from": "2026-11-17T05:00:00+11:00", "to": "2026-11-17T15:30:00+11:00", "cutoff": "2026-11-09T23:55:00+11:00", "maxOrders": null, "private": false },
+      { "type": "delivery", "zoneId": 2800, "from": "2026-11-17T07:00:00+11:00", "to": "2026-11-17T15:30:00+11:00", "cutoff": "2026-11-09T23:55:00+11:00", "maxOrders": null, "private": false }
+    ]
+  }
+}
