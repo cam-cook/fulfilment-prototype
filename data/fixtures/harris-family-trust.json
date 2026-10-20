@@ -1,0 +1,64 @@
+{
+  "cook": {
+    "id": 762,
+    "name": "Harris Family Trust",
+    "timezone": "Australia/Melbourne",
+    "ordersPerWeek": 190.1,
+    "riskTags": [
+      "private-pickups",
+      "multi-day-delivery"
+    ],
+    "why": "Delivers over 4 days from one Monday-night cutoff. The Shop pickup mixes public windows with private, same-day windows added for single orders, and 2 of those are on the reference menu."
+  },
+  "suggestedStart": {"type":"after_close"},
+  "zones": [
+    {"id":2482,"name":"Mortlake Route"},
+    {"id":2483,"name":"Port Fairy Route"},
+    {"id":2484,"name":"City Zone"},
+    {"id":2486,"name":"Terang"},
+    {"id":2487,"name":"Camperdown"},
+    {"id":3280,"name":"New Delivery Zone"},
+    {"id":3992,"name":"Hamilton/Portland"}
+  ],
+  "pickupLocations": [
+    {"id":850,"name":"Shop","private":false}
+  ],
+  "schedules": [
+    {"id":"s-2482","type":"delivery","zoneId":2482,"days":["wednesday"],"timeWindows":[{"start":"12:00","end":"17:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":2,"time":"22:00"},"maxOrders":null},
+    {"id":"s-2483","type":"delivery","zoneId":2483,"days":["wednesday"],"timeWindows":[{"start":"12:00","end":"17:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":2,"time":"22:00"},"maxOrders":null},
+    {"id":"s-2484-a","type":"delivery","zoneId":2484,"days":["tuesday"],"timeWindows":[{"start":"12:00","end":"17:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":1,"time":"22:00"},"maxOrders":null},
+    {"id":"s-2484-b","type":"delivery","zoneId":2484,"days":["wednesday"],"timeWindows":[{"start":"09:00","end":"17:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":2,"time":"22:00"},"maxOrders":null},
+    {"id":"s-2484-c","type":"delivery","zoneId":2484,"days":["thursday"],"timeWindows":[{"start":"12:00","end":"17:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":3,"time":"22:00"},"maxOrders":null},
+    {"id":"s-2486","type":"delivery","zoneId":2486,"days":["wednesday"],"timeWindows":[{"start":"12:00","end":"17:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":2,"time":"22:00"},"maxOrders":null},
+    {"id":"s-2487","type":"delivery","zoneId":2487,"days":["thursday"],"timeWindows":[{"start":"12:00","end":"17:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":3,"time":"22:00"},"maxOrders":null},
+    {"id":"s-3992","type":"delivery","zoneId":3992,"days":["friday"],"timeWindows":[{"start":"09:00","end":"17:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":2,"time":"17:00"},"maxOrders":null},
+    {"id":"s-850-a","type":"pickup","pickupLocationId":850,"days":["tuesday"],"timeWindows":[{"start":"14:00","end":"18:30"}],"deadline":{"strategy":"days_before_at_time","daysBefore":1,"time":"22:00"},"maxOrders":null},
+    {"id":"s-850-b","type":"pickup","pickupLocationId":850,"days":["wednesday"],"timeWindows":[{"start":"09:00","end":"18:30"}],"deadline":{"strategy":"days_before_at_time","daysBefore":2,"time":"22:00"},"maxOrders":null},
+    {"id":"s-850-c","type":"pickup","pickupLocationId":850,"days":["thursday"],"timeWindows":[{"start":"09:00","end":"18:30"}],"deadline":{"strategy":"days_before_at_time","daysBefore":3,"time":"22:00"},"maxOrders":null},
+    {"id":"s-850-d","type":"pickup","pickupLocationId":850,"days":["friday"],"timeWindows":[{"start":"09:00","end":"18:30"}],"deadline":{"strategy":"days_before_at_time","daysBefore":4,"time":"22:00"},"maxOrders":null}
+  ],
+  "referenceMenu": {
+    "id": 26626,
+    "name": "Weekly Meals ( 20th, 21st, 22nd, & 23rd October Deliveries)",
+    "opensAt": "2026-10-15T09:00:00+11:00",
+    "closesAt": "2026-10-19T22:00:00+11:00",
+    "zoneIds": [2484,2482,2483,2486,2487,3992],
+    "pickupLocationIds": [850],
+    "legacyWindows": [
+      {"type":"delivery","zoneId":2484,"from":"2026-10-20T12:00:00+11:00","to":"2026-10-20T17:00:00+11:00","cutoff":"2026-10-19T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":2484,"from":"2026-10-21T09:00:00+11:00","to":"2026-10-21T17:00:00+11:00","cutoff":"2026-10-19T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":2482,"from":"2026-10-21T12:00:00+11:00","to":"2026-10-21T17:00:00+11:00","cutoff":"2026-10-19T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":2483,"from":"2026-10-21T12:00:00+11:00","to":"2026-10-21T17:00:00+11:00","cutoff":"2026-10-19T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":2486,"from":"2026-10-21T12:00:00+11:00","to":"2026-10-21T17:00:00+11:00","cutoff":"2026-10-19T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":2484,"from":"2026-10-22T12:00:00+11:00","to":"2026-10-22T17:00:00+11:00","cutoff":"2026-10-19T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":2487,"from":"2026-10-22T12:00:00+11:00","to":"2026-10-22T17:00:00+11:00","cutoff":"2026-10-19T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":3992,"from":"2026-10-23T09:00:00+11:00","to":"2026-10-23T17:00:00+11:00","cutoff":"2026-10-21T17:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"pickup","pickupLocationId":850,"from":"2026-10-15T09:00:00+11:00","to":"2026-10-15T17:00:00+11:00","cutoff":"2026-10-15T14:00:15+11:00","maxOrders":null,"private":true},
+      {"type":"pickup","pickupLocationId":850,"from":"2026-10-20T09:00:00+11:00","to":"2026-10-20T17:00:00+11:00","cutoff":"2026-10-20T06:00:05+11:00","maxOrders":null,"private":true},
+      {"type":"pickup","pickupLocationId":850,"from":"2026-10-20T14:00:00+11:00","to":"2026-10-20T18:30:00+11:00","cutoff":"2026-10-19T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"pickup","pickupLocationId":850,"from":"2026-10-21T09:00:00+11:00","to":"2026-10-21T18:30:00+11:00","cutoff":"2026-10-19T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"pickup","pickupLocationId":850,"from":"2026-10-22T09:00:00+11:00","to":"2026-10-22T18:30:00+11:00","cutoff":"2026-10-19T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"pickup","pickupLocationId":850,"from":"2026-10-23T09:00:00+11:00","to":"2026-10-23T18:30:00+11:00","cutoff":"2026-10-19T22:00:00+11:00","maxOrders":null,"private":false}
+    ]
+  }
+}

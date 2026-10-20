@@ -1,0 +1,80 @@
+{
+  "cook": {
+    "id": 596,
+    "name": "Katering Pty Ltd",
+    "timezone": "Australia/Sydney",
+    "ordersPerWeek": 172.8,
+    "riskTags": [
+      "happy-path"
+    ],
+    "why": "Happy-path control. All 12 zones deliver on Tuesday with a cutoff the Thursday before at 22:00, plus a Tuesday pickup. Variation is light: a one-off Wednesday delivery and a private pickup."
+  },
+  "suggestedStart": {"type":"after_close"},
+  "zones": [
+    {"id":2044,"name":"BALMAIN"},
+    {"id":2045,"name":"BEACHES"},
+    {"id":2046,"name":"BELLHILL"},
+    {"id":2047,"name":"BRONTE"},
+    {"id":2048,"name":"CITY"},
+    {"id":2049,"name":"DARLINGPT"},
+    {"id":2050,"name":"EAST"},
+    {"id":2051,"name":"MOSMAN"},
+    {"id":2052,"name":"NORTHSYD"},
+    {"id":2053,"name":"PALMY"},
+    {"id":2054,"name":"WEST"},
+    {"id":2257,"name":"BALMAIN - Christmas"},
+    {"id":2258,"name":"BEACHES - Christmas"},
+    {"id":2259,"name":"BELLHILL - Christmas"},
+    {"id":2260,"name":"BRONTE - Christmas"},
+    {"id":2261,"name":"CITY - Christmas"},
+    {"id":2262,"name":"DARLINGPT - Christmas"},
+    {"id":2263,"name":"EAST - Christmas"},
+    {"id":2264,"name":"MOSMAN - Christmas"},
+    {"id":2265,"name":"NORTHSYD - Christmas"},
+    {"id":2267,"name":"WEST - Christmas"},
+    {"id":2595,"name":"Southern Highlands"},
+    {"id":2626,"name":"St Ives"}
+  ],
+  "pickupLocations": [
+    {"id":590,"name":"Katering at Home","private":false}
+  ],
+  "schedules": [
+    {"id":"s-2044","type":"delivery","zoneId":2044,"days":["tuesday"],"timeWindows":[{"start":"12:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":5,"time":"22:00"},"maxOrders":null},
+    {"id":"s-2045","type":"delivery","zoneId":2045,"days":["tuesday"],"timeWindows":[{"start":"12:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":5,"time":"22:00"},"maxOrders":null},
+    {"id":"s-2046","type":"delivery","zoneId":2046,"days":["tuesday"],"timeWindows":[{"start":"12:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":5,"time":"22:00"},"maxOrders":null},
+    {"id":"s-2047","type":"delivery","zoneId":2047,"days":["tuesday"],"timeWindows":[{"start":"12:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":5,"time":"22:00"},"maxOrders":null},
+    {"id":"s-2048","type":"delivery","zoneId":2048,"days":["tuesday"],"timeWindows":[{"start":"12:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":5,"time":"22:00"},"maxOrders":null},
+    {"id":"s-2049","type":"delivery","zoneId":2049,"days":["tuesday"],"timeWindows":[{"start":"12:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":5,"time":"22:00"},"maxOrders":null},
+    {"id":"s-2050","type":"delivery","zoneId":2050,"days":["tuesday"],"timeWindows":[{"start":"12:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":5,"time":"22:00"},"maxOrders":null},
+    {"id":"s-2051","type":"delivery","zoneId":2051,"days":["tuesday"],"timeWindows":[{"start":"12:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":5,"time":"22:00"},"maxOrders":null},
+    {"id":"s-2052","type":"delivery","zoneId":2052,"days":["tuesday"],"timeWindows":[{"start":"12:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":5,"time":"22:00"},"maxOrders":null},
+    {"id":"s-2053","type":"delivery","zoneId":2053,"days":["tuesday"],"timeWindows":[{"start":"12:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":5,"time":"22:00"},"maxOrders":null},
+    {"id":"s-2054","type":"delivery","zoneId":2054,"days":["tuesday"],"timeWindows":[{"start":"12:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":5,"time":"22:00"},"maxOrders":null},
+    {"id":"s-2626","type":"delivery","zoneId":2626,"days":["tuesday"],"timeWindows":[{"start":"12:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":5,"time":"22:00"},"maxOrders":null},
+    {"id":"s-590","type":"pickup","pickupLocationId":590,"days":["tuesday"],"timeWindows":[{"start":"14:00","end":"17:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":5,"time":"22:00"},"maxOrders":null}
+  ],
+  "referenceMenu": {
+    "id": 26562,
+    "name": "Katering at Home Tuesday 27th October",
+    "opensAt": "2026-10-16T09:00:00+11:00",
+    "closesAt": "2026-10-22T22:00:00+11:00",
+    "zoneIds": [2044,2045,2046,2047,2048,2049,2050,2051,2052,2053,2054,2626],
+    "pickupLocationIds": [590],
+    "legacyWindows": [
+      {"type":"delivery","zoneId":2044,"from":"2026-10-27T12:00:00+11:00","to":"2026-10-27T18:00:00+11:00","cutoff":"2026-10-22T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":2045,"from":"2026-10-27T12:00:00+11:00","to":"2026-10-27T18:00:00+11:00","cutoff":"2026-10-22T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":2046,"from":"2026-10-27T12:00:00+11:00","to":"2026-10-27T18:00:00+11:00","cutoff":"2026-10-22T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":2047,"from":"2026-10-27T12:00:00+11:00","to":"2026-10-27T18:00:00+11:00","cutoff":"2026-10-22T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":2048,"from":"2026-10-27T12:00:00+11:00","to":"2026-10-27T18:00:00+11:00","cutoff":"2026-10-22T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":2049,"from":"2026-10-27T12:00:00+11:00","to":"2026-10-27T18:00:00+11:00","cutoff":"2026-10-22T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":2050,"from":"2026-10-27T12:00:00+11:00","to":"2026-10-27T18:00:00+11:00","cutoff":"2026-10-22T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":2051,"from":"2026-10-27T12:00:00+11:00","to":"2026-10-27T18:00:00+11:00","cutoff":"2026-10-22T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":2052,"from":"2026-10-27T12:00:00+11:00","to":"2026-10-27T18:00:00+11:00","cutoff":"2026-10-22T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":2053,"from":"2026-10-27T12:00:00+11:00","to":"2026-10-27T18:00:00+11:00","cutoff":"2026-10-22T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":2054,"from":"2026-10-27T12:00:00+11:00","to":"2026-10-27T18:00:00+11:00","cutoff":"2026-10-22T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":2626,"from":"2026-10-27T12:00:00+11:00","to":"2026-10-27T18:00:00+11:00","cutoff":"2026-10-22T22:00:00+11:00","maxOrders":null,"private":false},
+      {"type":"pickup","pickupLocationId":590,"from":"2026-10-19T09:00:00+11:00","to":"2026-10-19T17:00:00+11:00","cutoff":"2026-10-19T08:00:58+11:00","maxOrders":null,"private":true},
+      {"type":"pickup","pickupLocationId":590,"from":"2026-10-27T14:00:00+11:00","to":"2026-10-27T17:00:00+11:00","cutoff":"2026-10-22T22:00:00+11:00","maxOrders":null,"private":false}
+    ]
+  }
+}

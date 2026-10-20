@@ -1,0 +1,48 @@
+{
+  "cook": {
+    "id": 498,
+    "name": "Judy Purvis",
+    "timezone": "Australia/Sydney",
+    "ordersPerWeek": 12.9,
+    "riskTags": [
+      "many-window-patterns",
+      "capped-windows"
+    ],
+    "why": "Low volume with many window patterns in one zone and one pickup: short capped windows most days, with cutoffs that vary by weekday and menu."
+  },
+  "suggestedStart": {"type":"menu_opens"},
+  "zones": [
+    {"id":1052,"name":"Dubbo - 5km"},
+    {"id":2791,"name":"New Delivery Zone"},
+    {"id":3977,"name":"Dubbo - 5kms"}
+  ],
+  "pickupLocations": [
+    {"id":488,"name":"The Baking Lady","private":false},
+    {"id":940,"name":"The Baking Lady","private":false}
+  ],
+  "schedules": [
+    {"id":"s-1052-a","type":"delivery","zoneId":1052,"days":["monday","tuesday","wednesday","thursday","friday","saturday"],"timeWindows":[{"start":"16:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":2,"time":"21:00"},"maxOrders":4},
+    {"id":"s-1052-b","type":"delivery","zoneId":1052,"days":["tuesday"],"timeWindows":[{"start":"10:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":4,"time":"22:36"},"maxOrders":4},
+    {"id":"s-1052-c","type":"delivery","zoneId":1052,"days":["tuesday"],"timeWindows":[{"start":"15:30","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":1,"time":"09:00"},"maxOrders":10},
+    {"id":"s-1052-d","type":"delivery","zoneId":1052,"days":["friday"],"timeWindows":[{"start":"15:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":2,"time":"21:00"},"maxOrders":10},
+    {"id":"s-488-a","type":"pickup","pickupLocationId":488,"days":["monday","tuesday","wednesday","thursday","friday","saturday"],"timeWindows":[{"start":"10:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":4,"time":"22:00"},"maxOrders":4},
+    {"id":"s-488-b","type":"pickup","pickupLocationId":488,"days":["monday","thursday","friday","saturday"],"timeWindows":[{"start":"16:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":2,"time":"21:00"},"maxOrders":4},
+    {"id":"s-488-c","type":"pickup","pickupLocationId":488,"days":["tuesday"],"timeWindows":[{"start":"16:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":1,"time":"09:00"},"maxOrders":5},
+    {"id":"s-488-d","type":"pickup","pickupLocationId":488,"days":["wednesday"],"timeWindows":[{"start":"16:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":2,"time":"22:00"},"maxOrders":10},
+    {"id":"s-488-e","type":"pickup","pickupLocationId":488,"days":["friday"],"timeWindows":[{"start":"15:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":2,"time":"21:00"},"maxOrders":5}
+  ],
+  "referenceMenu": {
+    "id": 26685,
+    "name": "The Baking Lady's Weekly Menu - Delivery Tuesday & Friday",
+    "opensAt": "2026-10-17T08:00:00+11:00",
+    "closesAt": "2026-10-21T21:00:00+11:00",
+    "zoneIds": [1052],
+    "pickupLocationIds": [488],
+    "legacyWindows": [
+      {"type":"delivery","zoneId":1052,"from":"2026-10-20T15:30:00+11:00","to":"2026-10-20T18:00:00+11:00","cutoff":"2026-10-18T18:44:37+11:00","maxOrders":10,"private":false},
+      {"type":"delivery","zoneId":1052,"from":"2026-10-23T15:00:00+11:00","to":"2026-10-23T18:00:00+11:00","cutoff":"2026-10-21T21:00:00+11:00","maxOrders":10,"private":false},
+      {"type":"pickup","pickupLocationId":488,"from":"2026-10-20T16:00:00+11:00","to":"2026-10-20T18:00:00+11:00","cutoff":"2026-10-18T18:44:45+11:00","maxOrders":5,"private":false},
+      {"type":"pickup","pickupLocationId":488,"from":"2026-10-23T15:00:00+11:00","to":"2026-10-23T18:00:00+11:00","cutoff":"2026-10-21T21:00:00+11:00","maxOrders":5,"private":false}
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "cook": {
+    "id": 383,
+    "name": "Local Kitchen Co",
+    "timezone": "Australia/Adelaide",
+    "ordersPerWeek": 247.6,
+    "riskTags": [
+      "windows-vary-per-menu",
+      "many-menus-a-week",
+      "private-menus"
+    ],
+    "why": "Runs a weekly delivery menu alongside 5 private in-store menus each week. Each weekly menu uses only a few of the 12 zones, and windows and cutoffs change from menu to menu."
+  },
+  "suggestedStart": {"type":"after_close"},
+  "zones": [
+    {"id":1902,"name":"Glenelg"},
+    {"id":2026,"name":"Extended South - Hills"},
+    {"id":2064,"name":"Inner East"},
+    {"id":2391,"name":"South"},
+    {"id":2432,"name":"Inner South"},
+    {"id":2495,"name":"North"},
+    {"id":2498,"name":"East"},
+    {"id":3502,"name":"Extended South - Port Elliot"},
+    {"id":3503,"name":"Extended South - Coast"},
+    {"id":3991,"name":"Regional Zone"},
+    {"id":3993,"name":"Metro South"},
+    {"id":3994,"name":"Metro North"}
+  ],
+  "pickupLocations": [
+    {"id":602,"name":"Local Kitchen Co Parkside","private":false},
+    {"id":627,"name":"Local Kitchen Co Malvern","private":false},
+    {"id":628,"name":"Local Kitchen Co Glenelg","private":false},
+    {"id":925,"name":"Local Kitchen Co Modbury","private":false},
+    {"id":942,"name":"Local Kitchen Co Port Elliot","private":false}
+  ],
+  "schedules": [
+    {"id":"s-3991","type":"delivery","zoneId":3991,"days":["thursday"],"timeWindows":[{"start":"08:00","end":"17:00"},{"start":"09:00","end":"17:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":5,"time":"17:00"},"maxOrders":null},
+    {"id":"s-3993","type":"delivery","zoneId":3993,"days":["wednesday"],"timeWindows":[{"start":"08:00","end":"17:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":4,"time":"17:00"},"maxOrders":null},
+    {"id":"s-3994","type":"delivery","zoneId":3994,"days":["friday"],"timeWindows":[{"start":"08:00","end":"17:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":6,"time":"17:00"},"maxOrders":null},
+    {"id":"s-602","type":"pickup","pickupLocationId":602,"days":["wednesday"],"timeWindows":[{"start":"10:00","end":"15:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":4,"time":"17:00"},"maxOrders":null},
+    {"id":"s-628","type":"pickup","pickupLocationId":628,"days":["wednesday"],"timeWindows":[{"start":"12:00","end":"17:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":4,"time":"17:00"},"maxOrders":null},
+    {"id":"s-925","type":"pickup","pickupLocationId":925,"days":["thursday"],"timeWindows":[{"start":"13:00","end":"15:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":5,"time":"17:00"},"maxOrders":null},
+    {"id":"s-942","type":"pickup","pickupLocationId":942,"days":["friday"],"timeWindows":[{"start":"13:00","end":"18:00"},{"start":"14:00","end":"18:00"}],"deadline":{"strategy":"days_before_at_time","daysBefore":6,"time":"17:00"},"maxOrders":null}
+  ],
+  "referenceMenu": {
+    "id": 26615,
+    "name": "LKCo Weekly Menu 17th Oct - 24th Oct",
+    "opensAt": "2026-10-17T17:00:00+10:30",
+    "closesAt": "2026-10-24T17:00:00+10:30",
+    "zoneIds": [3993,3991,3994],
+    "pickupLocationIds": [602,628,925,942],
+    "legacyWindows": [
+      {"type":"delivery","zoneId":3993,"from":"2026-10-28T08:00:00+10:30","to":"2026-10-28T17:00:00+10:30","cutoff":"2026-10-24T17:00:00+10:30","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":3991,"from":"2026-10-29T08:00:00+10:30","to":"2026-10-29T17:00:00+10:30","cutoff":"2026-10-24T17:00:00+10:30","maxOrders":null,"private":false},
+      {"type":"delivery","zoneId":3994,"from":"2026-10-30T08:00:00+10:30","to":"2026-10-30T17:00:00+10:30","cutoff":"2026-10-24T17:00:00+10:30","maxOrders":null,"private":false},
+      {"type":"pickup","pickupLocationId":602,"from":"2026-10-28T10:00:00+10:30","to":"2026-10-28T15:00:00+10:30","cutoff":"2026-10-24T17:00:00+10:30","maxOrders":null,"private":false},
+      {"type":"pickup","pickupLocationId":628,"from":"2026-10-28T12:00:00+10:30","to":"2026-10-28T17:00:00+10:30","cutoff":"2026-10-24T17:00:00+10:30","maxOrders":null,"private":false},
+      {"type":"pickup","pickupLocationId":925,"from":"2026-10-29T13:00:00+10:30","to":"2026-10-29T15:00:00+10:30","cutoff":"2026-10-24T17:00:00+10:30","maxOrders":null,"private":false},
+      {"type":"pickup","pickupLocationId":942,"from":"2026-10-30T13:00:00+10:30","to":"2026-10-30T18:00:00+10:30","cutoff":"2026-10-24T17:00:00+10:30","maxOrders":null,"private":false}
+    ]
+  }
+}
